@@ -9,6 +9,7 @@
 <body>
     {% for area in areas %}
         <a href="{{ area.get_absolute_url }}"><h2>{{ area.titulo }}</h2></a>
+        <img src="{{ area.icone.url }}" alt="">
     {% endfor %}
 </body>
 </html>
