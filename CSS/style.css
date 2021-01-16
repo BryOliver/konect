@@ -117,3 +117,47 @@ body{
     text-decoration: none;
     font-size: 18px;
 }
+
+@media screen and (min-width: 768px){
+    #inicio{
+        height: 75vh;
+    }
+    .proposito__wrap, .cadastrar__wrap{
+        text-align: center;
+    }
+    #proposito, #formulario, #oportunidades{
+        padding-left: 10%;
+        padding-right: 10%
+    }
+    #formulario .inscreva__wrap{
+        padding: 0 20%;
+    }
+    #formulario .inscreva__wrap #enviar{
+        padding: 15px;
+    }
+    .inicio__news__wrap .inicio__news #mail_sub{
+        width:40%;
+        padding: 20px;
+    }
+    #proposito .proposito__botao{
+        padding: 15px 25px;
+    }
+    #inicio .inicio__titulo,
+    #proposito .proposito__titulo,
+    #formulario .formulario__titulo,
+    #oportunidades .proposito__titulo{
+        font-size: 45px;
+    }
+    #inicio .inicio__subtitulo,
+    #proposito .proposito__subtitulo,
+    #formulario .formulario__subtitulo,
+    #oportunidades .proposito__subtitulo{
+        font-size: 35px;
+    }
+    #inicio .inicio__texto,
+    #proposito .proposito__texto,
+    #formulario .formulario__texto,
+    #oportunidades .proposito__texto{
+        font-size: 22px;
+    }
+}
