@@ -41,7 +41,7 @@ body{
 /* SEÇÃO PROPOSITO */
 #proposito{
     background-color: #fefef3;
-    padding: 35px 110px 35px 0;
+    padding: 35px 0 0 0;
     color: #3f414e;
 }
 #proposito .proposito__titulo{
@@ -54,17 +54,21 @@ body{
 #proposito .proposito__botao{
     background: #F07D53;
     border: 1px solid #FFA62B;
-    border-radius: 68px;
+    border-radius: 10px;
     color: #fefef3;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
-    padding: 5px 20px;
+    padding: 10px 20px;
+}
+.cadastrar__wrap .proposito__botao__wrap{
+    text-align: center;
 }
 /* SEÇÃO FORMULÁRIO */
 #formulario{
     background-color: #e3dcd3;
-    padding: 30px 0;
+    padding: 40px 0;
     color: #3f414e;
+    margin-top: -15px;
 }
 #formulario .formulario__titulo{
     font-weight: bold;
