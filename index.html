@@ -1,11 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" rel="stylesheet" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Konect</title>
 </head>
-<body>
-    <h1>HELLO WORLD</h1>
+<body>  
+    <main>
+        <div class="inicio d-flex align-items-center" id="inicio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="inicio__wrap d-flex flex-column align-items-center">
+                            <img src="IMG/logo.png" alt="Logo">
+                            <h1 class="inicio__titulo titulo__braco">Lorem Ipsum</h1>
+                            <p class="inicio__texto texto__branco">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inicio__news__wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="inicio__news">
+                            <form action="" method="post">
+                                <div class="form__sub__wrap d-flex justify-content-center">
+                                    <input placeholder="Seu e-mail" type="email" name="mail_sub" id="mail_sub">
+                                    <input type="submit" value="Enviar" id="enviar_sub">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section id="oportunidades">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="proposito__wrap">
+                        <h2 class="proposito__titulo">O que você procura</h2>
+                        <h3 class="proposito__subtitulo">Lorem ipsum</h3>
+                        <p class="proposito__texto">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <a href="" class="oportunidade__link">
+                        <div class="oportinade__wrap">
+                            <h3 class="oportunidade__titulo">Eventos</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a href="" class="oportunidade__link">
+                        <div class="oportinade__wrap">
+                            <h3 class="oportunidade__titulo">Trabalho Voluntário</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a href="" class="oportunidade__link">
+                        <div class="oportinade__wrap">
+                            <h3 class="oportunidade__titulo">Estágio</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a href="" class="oportunidade__link">
+                        <div class="oportinade__wrap">
+                            <h3 class="oportunidade__titulo">Intecânbio <br> Cultura</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a href="" class="oportunidade__link">
+                        <div class="oportinade__wrap">
+                            <h3 class="oportunidade__titulo">Pesquisa/ Iniciação científica </h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a href="" class="oportunidade__link">
+                        <div class="oportinade__wrap">
+                            <h3 class="oportunidade__titulo">Centro ou Diretório Académico</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a href="" class="oportunidade__link">
+                        <div class="oportinade__wrap">
+                            <h3 class="oportunidade__titulo">Mentoria</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="proposito">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="proposito__wrap">
+                        <h2 class="proposito__titulo">Nosso Propósito</h2>
+                        <h3 class="proposito__subtitulo">Lorem ipsum</h3>
+                        <p class="proposito__texto">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et exercitationem debitis magnam beatae eius, neque ipsum architecto ipsa minus sapiente natus rem perspiciatis, ex voluptatibus. Sapiente unde ullam repellendus amet?
+                        </p>
+                        <a href="#">
+                            <button class="proposito__botao">Saiba mais</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formulario">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="formulario__wrap">
+                        <h2 class="formulario__titulo">Faça Parte Desse</h2>
+                        <h3 class="formulario__subtitulo">Ecosistema</h3>
+                        <p class="formularios__texto">
+                            Receba o link do Telegram preenchendo esse formulário.
+                        </p>
+                    </div>
+                    <div class="inscreva__wrap">
+                        <form action="" method="post">
+                            <div class="inscreva-form-group d-flex flex-column justify-content-center">
+                                <input placeholder="Nome completo" type="text" name="nome" id="nome">
+                                <input placeholder="E-mail" type="mail" name="mail" id="mail">
+                                <input type="submit" value="Enviar" id="enviar">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="JS/bootstrap.bundle.min.js"></script>
 </body>
 </html>
