@@ -111,6 +111,7 @@
                     </div>
                     <div class="inscreva__wrap">
                         <form action="" method="post">
+                            {% csrf_token %}
                             <div class="inscreva-form-group d-flex flex-column ">
                                 {{ form.nome }}
                                 {{ form.email }}
