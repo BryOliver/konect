@@ -1,0 +1,123 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #FFFFFF;
+}#head{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 45vh;
+    padding: 20px 0 0 0;
+}
+#saiba-mais{
+    padding: 25px 0;
+}
+#saiba-mais .saiba-mais__titulo{
+    font-weight: bold;
+    color: #3f414e;
+    font-size: 28px;
+}
+#saiba-mais .saiba-mais__subtitulo{
+    color: #A1A4B2;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+#saiba-mais .saiba-mais__descricao{
+    color: #A1A4B2;
+    font-weight: 300;
+}
+#saiba-mais .saiba-mais__button{
+    width:100%;
+    background-color: #F07D53;
+    border: none;
+    border-radius: 68px;
+    color: #FEFEF3;
+    padding: 5px 0;
+    margin: 5px;
+}
+#abas .nav-link{
+    font-family: 'Roboto', sans-serif;
+    color: #A1A4B2;
+    font-weight: bold;
+    border: none;
+    border-bottom: 1px solid #dee2e6;
+}
+#abas .nav-link.active{
+    color: #0091CA;
+    ;
+}
+.informacoes__wrap{
+    padding: 25px 0;
+}
+.informacoes__titulo{
+    font-weight: 500;
+    font-size: 18px;
+    color: #3F414E;
+    margin-left: 10px;
+}
+.informacoes__texto{
+    margin: 0;
+    font-weight: 500;
+    font-size: 12px;
+    color: #A1A4B2;
+}
+#abas .accordion-button{
+    border: none;
+    background: transparent;
+    outline: none !important;
+    border-radius: 0;
+    text-align: left;
+}
+#abas .accordion-button:focus{
+    box-shadow: none;
+}
+#abas .accordion-button::after{
+    content: none;
+}
+#abas #perguntas .perguntas__titulo{
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #3F414E;
+}
+#abas #perguntas .accordion-body{
+    font-weight: 300;
+    font-size: 14px;
+    color: #A1A4B2;
+}
+#abas #perguntas .accordion-collapse{
+    border: none;
+}
+@media screen and (min-width: 768px){
+    #head{
+        background-position: center;
+        height: 60vh;
+        padding: 20px 0 0 0;
+    }
+    #saiba-mais .saiba-mais__titulo{
+        font-size: 32px;
+    }
+    #saiba-mais .saiba-mais__subtitulo{
+        font-size: 22px;
+    }
+    #saiba-mais .saiba-mais__descricao{
+        font-size: 20px;
+    }
+    #saiba-mais .saiba-mais__button{
+        padding: 10px;
+        width: 20%;
+    }
+    #abas .nav-link{
+        font-size: 25px;
+    }
+    .informacoes__titulo{
+        font-size: 22px;
+    }
+    .informacoes__texto{
+        font-size: 18px;
+    }
+    #abas #perguntas .perguntas__titulo{
+        font-size: 20px;
+    }
+}
