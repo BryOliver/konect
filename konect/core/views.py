@@ -27,7 +27,7 @@ def categoria_view(request, slug):
         'oportunidades' : oportunidades,
     }
 
-    return render(request, 'area-list.html', context)
+    return render(request, 'trabalho-voluntario.html', context)
 
 def area_view(request, slug):
     area = get_object_or_404(Area, slug=slug)
@@ -38,7 +38,7 @@ def area_view(request, slug):
         'oportunidades' : oportunidades,
     }
 
-    return render(request, 'oportunidade-list.html', context)
+    return render(request, 'empresa-junior.html', context)
 
 def oportunidade_view(request, slug):
     oportunidade = get_object_or_404(Oportunidade, slug=slug)
@@ -50,4 +50,4 @@ def oportunidade_view(request, slug):
         'perguntas' : perguntas,
     }
 
-    return render(request, 'oportunidade-view.html', context)
+    return render(request, 'details.html', context)

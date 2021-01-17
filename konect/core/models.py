@@ -29,6 +29,7 @@ class Area(models.Model):
         blank=False
     )
     categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE, blank=True, null=True)
+    descricao = models.TextField('Descrição', max_length=500, blank=True)
 
     def __str__(self):
         return self.titulo
@@ -59,8 +60,9 @@ class Empresa(models.Model):
         verbose_name='Icone a oportunidade',
         blank=False
     )
-    link_doacao = models.TextField('Benefícios', max_length=500, blank=True)
-    link_instagram = models.TextField('Benefícios', max_length=500, blank=True)
+    area_de_atuacao = models.CharField('Área de atuação', blank=True, max_length=100)
+    link_doacao = models.TextField('Link para doações', max_length=500, blank=True)
+    link_instagram = models.TextField('Link para o instagram', max_length=500, blank=True)
 
     def __str__(self):
         return self.titulo
@@ -79,12 +81,12 @@ class Oportunidade(models.Model):
     )
     area = models.ForeignKey(Area, on_delete=models.CASCADE)
     empresa = models.ForeignKey(Empresa, on_delete=models.CASCADE, blank=True, null=True)
-    descricao = models.TextField('Benefícios', max_length=500, blank=True)
-    atuacao = models.CharField('Inscrições até', blank=True, max_length=100)
+    descricao = models.TextField('Descrição', max_length=500, blank=True)
+    atuacao = models.CharField('Atuação', blank=True, max_length=100)
     data = models.CharField('Inscrições até', blank=True, max_length=100)
     beneficios = models.TextField('Benefícios', max_length=500, blank=True)
     vagas = models.TextField('Vagas', max_length=500, blank=True)
-    link_inscricao = models.TextField('Benefícios', max_length=500, blank=True)
+    link_inscricao = models.TextField('link de inscrição', max_length=500, blank=True)
 
     def __str__(self):
         return self.titulo

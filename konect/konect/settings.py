@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '#c(zb=g5tn@&y0$yc!c9^4k&%*6javl1hi52t16s%-97^)teor'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bryanoliver.pythonanywhere.com', '*', 'BryanOliver.pythonanywhere.com']
 
 
 # Application definition
@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'konect.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': str(BASE_DIR / 'db.sqlite3'),
     }
 }
 
