@@ -13,6 +13,7 @@ class Index(CreateView):
         context['categorias'] = Categoria.objects.all()
         context['banner'] = Banner.objects.last()
         context['quemsomos'] = QuemSomos.objects.last()
+        context['cadastro'] = Cadastro.objects.last()
         return context
 
 def categoria_view(request, slug):

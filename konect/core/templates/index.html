@@ -9,7 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
-    <title>Konect</title>
+    <title>Azo</title>
+
+    <link rel="shortcut icon" href="{% static 'IMG/favicon.ico' %}" />
+
 </head>
 <body>  
     <main>
@@ -18,25 +21,8 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="inicio__wrap d-flex flex-column align-items-center">
-                            <img src="{% static 'IMG/logo.png' %}" alt="Logo">
-                            <h1 class="inicio__titulo titulo__braco">{{ banner.titulo }}</h1>
+                            <img src="{% static 'IMG/azo.png' %}" alt="Logo">
                             <p class="inicio__texto texto__branco">{{ banner.frase }}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="inicio__news__wrap">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="inicio__news">
-                            <form action="" method="post">
-                                <div class="form__sub__wrap d-flex justify-content-center">
-                                    <input placeholder="Seu e-mail" type="email" name="mail_sub" id="mail_sub">
-                                    <input type="submit" value="Enviar" id="enviar_sub">
-                                </div>
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -48,10 +34,10 @@
             <div class="row">
                 <div class="col-12 ">
                     <div class="proposito__wrap">
-                        <h2 class="proposito__titulo">{{ banner.pergunta }}</h2>
-                        <h3 class="proposito__subtitulo">{{ banner.descricao }}</h3>
+                        <h2 class="proposito__titulo">Já garantiu sua</h2>
+                        <h3 class="proposito__subtitulo">{{ banner.pergunta }}</h3>
                         <p class="proposito__texto">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            {{ banner.descricao }}
                         </p>
                     </div>
                 </div>
@@ -72,7 +58,7 @@
     <section id="proposito">
         <div class="container">
             <div class="row">
-                <div class="col-12 ">
+                <div class="col-12 col-md-6 ">
                     <div class="proposito__wrap">
                         <h2 class="proposito__titulo">{{ quemsomos.titulo }}</h2>
                         <h3 class="proposito__subtitulo">{{ quemsomos.subtitulo }}</h3>
@@ -81,15 +67,32 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-12 ">
-                    <div class="cadastrar__wrap">
-                        <h2 class="proposito__titulo">Lorem Ipsum is </h2>
-                        <h3 class="proposito__subtitulo">dummy text?</h3>
-                        <div class="proposito__botao__wrap">
-                            <a href="#">
-                                <button class="proposito__botao">Cadastre aqui novas oportunidades</button>
-                            </a>
-                        </div>
+                <div class="col-12 col-md-6">
+                    <div class="proposito__foguete__wrap">
+                        <img class="proposito__foguete"src="{% static 'IMG/foguete.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cadastrese">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="proposito__foguete__wrap">
+                        <img class="proposito__foguete"src="{% static 'IMG/garota.png'%}" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 ">
+                    <div class="cadastrese__wrap">
+                        <h2 class="cadastrese__titulo">{{ cadastro.titulo }}</h2>
+                        <h3 class="cadastrese__subtitulo">{{ cadastro.subtitulo }}</h3>
+                        <p class="cadastrese__texto">
+                            {{ cadastro.texto }}
+                        </p>
+                        <a href="" class="cadastrese__button__wrap">
+                            <button class="cadastrese__button">Cadastrar</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -109,7 +112,6 @@
                     <div class="inscreva__wrap">
                         <form action="" method="post">
                             <div class="inscreva-form-group d-flex flex-column ">
-                                {% csrf_token %}
                                 {{ form.nome }}
                                 {{ form.email }}
                                 <input type="submit" value="Enviar" id="enviar">
@@ -120,6 +122,11 @@
             </div>
         </div>
     </section>
+    <footer id="footer">
+        <p class="footer__text">
+            <strong>Siga</strong> nosso <img src="{% static 'IMG/coracao.png' %}" alt=""> e venha <strong>impactar o mundo</strong> com a gente.
+        </p>
+    </footer>
     <script src="{% static 'JS/bootstrap.bundle.min.js' %}"></script>
 </body>
 </html>

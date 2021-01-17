@@ -41,7 +41,10 @@ body{
 /* SEÇÃO PROPOSITO */
 #proposito{
     background-color: #fefef3;
-    padding: 35px 0 0 0;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 35px 0px 35px 0;
     color: #3f414e;
 }
 #proposito .proposito__titulo{
@@ -60,8 +63,33 @@ body{
     font-weight: bold;
     padding: 10px 20px;
 }
-.cadastrar__wrap .proposito__botao__wrap{
+.proposito__foguete__wrap{
     text-align: center;
+}
+.proposito__foguete{
+    width: 240px;
+    margin: 15px auto;
+}
+/* SEÇÃO CADASTRE-SE */
+#cadastrese{
+    text-align: right;
+    padding: 35px 0 35px 0;
+}
+#cadastrese .cadastrese__titulo{
+    font-weight: bold;
+    font-size: 28px;
+}
+#cadastrese .cadastrese__subtitulo{
+    font-weight: 200;
+}
+#cadastrese .cadastrese__button{
+    background: #F07D53;
+    border: 1px solid #FFA62B;
+    border-radius: 10px;
+    color: #fefef3;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
 }
 /* SEÇÃO FORMULÁRIO */
 #formulario{
@@ -104,26 +132,72 @@ body{
 #oportunidades .oportunidade__link{
     display: flex;
     align-items: flex-end;
-    background-color: #F07D53;
     width: 100%;
     margin: 5px 2.5px ;
     padding: 10px;
     min-height: 200px;
     border-radius: 10px;
     text-decoration: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top 20px;
 }
 #oportunidades .oportunidade__link .oportunidade__titulo{
     color: #fefef3;
     text-decoration: none;
     font-size: 18px;
 }
-
+#oportunidades  .row .col-6:nth-child(1) .oportunidade__link{
+    background-color:#0091CA;
+    background-image: url(/IMG/cards_1.svg);
+    
+}
+#oportunidades  .row .col-6:nth-child(2) .oportunidade__link{
+    background-color:#F07D53;
+    background-image: url(/IMG/cards_2.svg);
+    
+}
+#oportunidades  .row .col-6:nth-child(3) .oportunidade__link{
+    background-color:#D8508A;
+    background-image: url(/IMG/cards_3.svg);
+    
+}
+#oportunidades  .row .col-6:nth-child(4) .oportunidade__link{
+    background-color:#00BC52;
+    background-image: url(/IMG/cards_4.svg);
+    
+}
+#oportunidades  .row .col-6:nth-child(5) .oportunidade__link{
+    background-color:#0091CA;
+    background-image: url(/IMG/cards_5.svg);
+    
+}
+#oportunidades  .row .col-6:nth-child(6) .oportunidade__link{
+    background-color:#F07D53;
+    background-image: url(/IMG/cards_6.svg);
+    
+}
+#oportunidades  .row .col-6:nth-child(7) .oportunidade__link{
+    background-color:#00BC52;
+    background-image: url(/IMG/cards_7.svg);
+    
+}
+#footer{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#footer .footer__text{
+text-align: right;
+font-size: 20px;
+}
 @media screen and (min-width: 768px){
     #inicio{
         height: 75vh;
     }
-    .proposito__wrap, .cadastrar__wrap{
-        text-align: center;
+    #oportunidades .oportunidade__link{
+        background-size: 60%;
     }
     #proposito, #formulario, #oportunidades{
         padding-left: 10%;
@@ -159,5 +233,12 @@ body{
     #formulario .formulario__texto,
     #oportunidades .proposito__texto{
         font-size: 22px;
+    }
+    #footer{
+        justify-content: center;
+    }
+    #footer .footer__text{
+        text-align: right;
+        font-size: 28px;
     }
 }
