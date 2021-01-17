@@ -4,15 +4,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <link rel="stylesheet" href="{% static 'CSS/bootstrap.min.css' %}" rel="stylesheet" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+    <title>Konect</title>
 </head>
-<body>
-    <form method="POST">
-        {{ form }}
-    </form>
-    {% for area in areas %}
-        <a href="{{ area.get_absolute_url }}"><h2>{{ area.titulo }}</h2></a>
-        <img src="{{ area.icone.url }}" alt="">
-    {% endfor %}
+<body>  
+    <main>
+        <div class="inicio d-flex align-items-center" id="inicio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="inicio__wrap d-flex flex-column align-items-center">
+                            <img src="{% static 'IMG/logo.png' %}" alt="Logo">
+                            <h1 class="inicio__titulo titulo__braco">{{ banner.titulo }}</h1>
+                            <p class="inicio__texto texto__branco">{{ banner.frase }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inicio__news__wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="inicio__news">
+                            <form action="" method="post">
+                                <div class="form__sub__wrap d-flex justify-content-center">
+                                    <input placeholder="Seu e-mail" type="email" name="mail_sub" id="mail_sub">
+                                    <input type="submit" value="Enviar" id="enviar_sub">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section id="oportunidades">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="proposito__wrap">
+                        <h2 class="proposito__titulo">{{ banner.pergunta }}</h2>
+                        <h3 class="proposito__subtitulo">{{ banner.descricao }}</h3>
+                        <p class="proposito__texto">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                {% for categoria in categorias %}
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <a href="{{ categoria.get_absolute_url }}" class="oportunidade__link">
+                            <div class="oportinade__wrap">
+                                <h3 class="oportunidade__titulo">{{ categoria.titulo }}</h3>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <section id="proposito">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="proposito__wrap">
+                        <h2 class="proposito__titulo">{{ quemsomos.titulo }}</h2>
+                        <h3 class="proposito__subtitulo">{{ quemsomos.subtitulo }}</h3>
+                        <p class="proposito__texto">
+                            {{ quemsomos.texto }}
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 ">
+                    <div class="cadastrar__wrap">
+                        <h2 class="proposito__titulo">Lorem Ipsum is </h2>
+                        <h3 class="proposito__subtitulo">dummy text?</h3>
+                        <div class="proposito__botao__wrap">
+                            <a href="#">
+                                <button class="proposito__botao">Cadastre aqui novas oportunidades</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formulario">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="formulario__wrap">
+                        <h2 class="formulario__titulo">Faça Parte Desse</h2>
+                        <h3 class="formulario__subtitulo">Ecosistema</h3>
+                        <p class="formularios__texto">
+                            Receba o link do Telegram preenchendo esse formulário.
+                        </p>
+                    </div>
+                    <div class="inscreva__wrap">
+                        <form action="" method="post">
+                            <div class="inscreva-form-group d-flex flex-column ">
+                                {% csrf_token %}
+                                {{ form.nome }}
+                                {{ form.email }}
+                                <input type="submit" value="Enviar" id="enviar">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="{% static 'JS/bootstrap.bundle.min.js' %}"></script>
 </body>
 </html>

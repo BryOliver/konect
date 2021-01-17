@@ -16,3 +16,7 @@ class CategoriaAdmin(admin.ModelAdmin):
 @admin.register(Empresa)
 class EmpresaAdmin(admin.ModelAdmin):
     pass
+
+@admin.register(Banner, QuemSomos, Cadastro, Pergunta)
+class BannerAdmin(admin.ModelAdmin):
+    pass

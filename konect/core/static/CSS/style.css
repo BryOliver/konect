@@ -1,0 +1,163 @@
+*{
+    font-family: 'Montserrat';
+}
+body{
+    background-color: #F2F2F2;
+}
+/* SEÇÃO INICIAL */
+#inicio{
+    background-color: #009EB4;
+    height: 50vh;
+    margin-bottom: -15px;
+}
+.inicio__wrap{
+    text-align: center;
+    color:#fefef3;
+}
+.inicio__wrap .inicio__titulo{
+    font-weight: 700;
+    font-size: 28px;
+    margin: 15px 0 0 0;
+}
+.inicio__wrap .inicio__texto{
+    font-weight: normal;
+    font-size: 16px;
+    margin: 15px 0 0 0;
+}
+.inicio__news__wrap .inicio__news #mail_sub, .inicio__news__wrap .inicio__news #enviar_sub{
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.inicio__news__wrap .inicio__news #mail_sub{
+    padding: 10px 15px;
+    border-radius: 5px 0 0 5px;
+}
+.inicio__news__wrap .inicio__news #enviar_sub{
+    background-color: #F07D53;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+}
+/* SEÇÃO PROPOSITO */
+#proposito{
+    background-color: #fefef3;
+    padding: 35px 0 0 0;
+    color: #3f414e;
+}
+#proposito .proposito__titulo{
+    font-weight: bold;
+    font-size: 28px;
+}
+#proposito .proposito__subtitulo{
+    font-weight: 200;
+}
+#proposito .proposito__botao{
+    background: #F07D53;
+    border: 1px solid #FFA62B;
+    border-radius: 10px;
+    color: #fefef3;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+.cadastrar__wrap .proposito__botao__wrap{
+    text-align: center;
+}
+/* SEÇÃO FORMULÁRIO */
+#formulario{
+    background-color: #e3dcd3;
+    padding: 40px 0;
+    color: #3f414e;
+    margin-top: -15px;
+}
+#formulario .formulario__titulo{
+    font-weight: bold;
+    font-size: 28px;
+}
+#formulario .formulario__subtitulo{
+    font-weight: 200;
+}
+#formulario .formulario__texto{
+    font-weight: 300;
+    font-size: 12px ;
+}
+#formulario .inscreva-form-group input{
+    margin: 10px 0;
+    background-color: #fefef3;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    color: #3f414e;
+    outline: none !important;
+}
+#formulario .inscreva-form-group #enviar{
+    background-color: #F07D53;
+    color: #fefef3;
+    padding: 5px;
+    font-family: "Roboto", sans-serif;
+}
+
+#oportunidades{
+    padding: 35px 0;
+    background-color:#F2F2F2;
+}
+#oportunidades .oportunidade__link{
+    display: flex;
+    align-items: flex-end;
+    background-color: #F07D53;
+    width: 100%;
+    margin: 5px 2.5px ;
+    padding: 10px;
+    min-height: 200px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+#oportunidades .oportunidade__link .oportunidade__titulo{
+    color: #fefef3;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 768px){
+    #inicio{
+        height: 75vh;
+    }
+    .proposito__wrap, .cadastrar__wrap{
+        text-align: center;
+    }
+    #proposito, #formulario, #oportunidades{
+        padding-left: 10%;
+        padding-right: 10%
+    }
+    #formulario .inscreva__wrap{
+        padding: 0 20%;
+    }
+    #formulario .inscreva__wrap #enviar{
+        padding: 15px;
+    }
+    .inicio__news__wrap .inicio__news #mail_sub{
+        width:40%;
+        padding: 20px;
+    }
+    #proposito .proposito__botao{
+        padding: 15px 25px;
+    }
+    #inicio .inicio__titulo,
+    #proposito .proposito__titulo,
+    #formulario .formulario__titulo,
+    #oportunidades .proposito__titulo{
+        font-size: 45px;
+    }
+    #inicio .inicio__subtitulo,
+    #proposito .proposito__subtitulo,
+    #formulario .formulario__subtitulo,
+    #oportunidades .proposito__subtitulo{
+        font-size: 35px;
+    }
+    #inicio .inicio__texto,
+    #proposito .proposito__texto,
+    #formulario .formulario__texto,
+    #oportunidades .proposito__texto{
+        font-size: 22px;
+    }
+}

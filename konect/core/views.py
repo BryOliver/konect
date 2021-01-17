@@ -10,8 +10,23 @@ class Index(CreateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['areas'] = Area.objects.all()
+        context['categorias'] = Categoria.objects.all()
+        context['banner'] = Banner.objects.last()
+        context['quemsomos'] = QuemSomos.objects.last()
         return context
+
+def categoria_view(request, slug):
+    categoria = get_object_or_404(Categoria, slug=slug)
+    areas = Area.objects.filter(categoria=categoria)
+    oportunidades = Oportunidade.objects.all()
+
+    context = {
+        'categoria' : categoria,
+        'areas' : areas,
+        'oportunidades' : oportunidades,
+    }
+
+    return render(request, 'area-list.html', context)
 
 def area_view(request, slug):
     area = get_object_or_404(Area, slug=slug)
@@ -26,9 +41,12 @@ def area_view(request, slug):
 
 def oportunidade_view(request, slug):
     oportunidade = get_object_or_404(Oportunidade, slug=slug)
+    area = oportunidade.area
+    perguntas = Pergunta.objects.filter(area=area)
 
     context = {
         'oportunidade' : oportunidade,
+        'perguntas' : perguntas,
     }
 
     return render(request, 'oportunidade-view.html', context)

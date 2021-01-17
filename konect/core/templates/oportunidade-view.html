@@ -7,5 +7,13 @@
 </head>
 <body>
     <h1>{{ oportunidade.titulo }}</h1>
+
+    {% for pergunta in perguntas%}
+        <p>{{ pergunta.pergunta }}</p>
+        <li>{{ pergunta.resposta }}</li>
+    {% endfor %}
+    <p>{{ oportunidade.vagas }}</p>
+    <p>{{ oportunidade.beneficios|linebreaks }}</p>
+
 </body>
 </html>
