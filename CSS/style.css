@@ -149,38 +149,24 @@ body{
 }
 #oportunidades  .row .col-6:nth-child(1) .oportunidade__link{
     background-color:#0091CA;
-    background-image: url(/IMG/cards_1.svg);
-    
 }
 #oportunidades  .row .col-6:nth-child(2) .oportunidade__link{
     background-color:#F07D53;
-    background-image: url(/IMG/cards_2.svg);
-    
 }
 #oportunidades  .row .col-6:nth-child(3) .oportunidade__link{
     background-color:#D8508A;
-    background-image: url(/IMG/cards_3.svg);
-    
 }
 #oportunidades  .row .col-6:nth-child(4) .oportunidade__link{
     background-color:#00BC52;
-    background-image: url(/IMG/cards_4.svg);
-    
 }
 #oportunidades  .row .col-6:nth-child(5) .oportunidade__link{
     background-color:#0091CA;
-    background-image: url(/IMG/cards_5.svg);
-    
 }
 #oportunidades  .row .col-6:nth-child(6) .oportunidade__link{
     background-color:#F07D53;
-    background-image: url(/IMG/cards_6.svg);
-    
 }
 #oportunidades  .row .col-6:nth-child(7) .oportunidade__link{
     background-color:#00BC52;
-    background-image: url(/IMG/cards_7.svg);
-    
 }
 #footer{
     padding: 20px;
